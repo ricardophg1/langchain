@@ -1,7 +1,19 @@
 [project]
 name = "project-langchain"
 version = "0.1.0"
-description = "Add your description here"
+description = "Plataforma de Analytics usando Langchain e OpenAI"
 readme = "README.md"
-requires-python = ">=3.12"
-dependencies = []
+requires-python = ">=3.11"
+dependencies = [
+    "streamlit",
+    "langchain-openai",
+    "python-dotenv",
+    "pyyaml",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+targets = { wheel = { packages = ["src"] }, sdist = {} }
