@@ -6,13 +6,17 @@ dependencies = [
     "streamlit",
     "openai>=1.0.0",
     "python-dotenv",
+    "python-pptx",
     "langchain",
     "langchain-openai",
     "pandas",
     "plotly",
     "numpy",
     "openpyxl",
-    "fastparquet"
+    "fastparquet",
+    "secure-smtplib",
+    "reportlab",
+    "requests",
 ]
 
 [build-system]
