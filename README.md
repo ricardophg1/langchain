@@ -77,7 +77,9 @@
 
 ### 💬 Chat com IA
 
-![AI Chat Preview](docs/images/chat.png)
+O sistema possui um assistente virtual especializado em análise empresarial, que pode ajudar com insights e recomendações baseadas nos dados.
+
+![Chat](docs/images/chat.png)
 
 1. Assistente virtual integrado
 2. Análises contextualizadas
@@ -99,11 +101,11 @@
 1. Clone o Repositório
 
 ```bash
-git clone https://github.com/seu-usuario/business-analytics-ai.git
-cd business-analytics-ai
+git clone https://github.com/ricardophg1/langchain.git
+cd langchain
 ```
 
-1. Configure o Ambiente Virtual
+2.Configure o Ambiente Virtual
 
 ```bash
 python -m venv .venv
@@ -112,13 +114,13 @@ source .venv/bin/activate  # Linux/Mac
 .venv\Scripts\activate  # Windows
 ```
 
-1. Instale as Dependências
+3.Instale as Dependências
 
 ```bash
 pip install -r requirements/prod.txt
 ```
 
-1. Configure as Variáveis de Ambiente
+1.Configure as Variáveis de Ambiente
 
 ```env
 OPENAI_API_KEY=sua_chave_api
