@@ -79,7 +79,7 @@
 
 O sistema possui um assistente virtual especializado em análise empresarial, que pode ajudar com insights e recomendações baseadas nos dados.
 
-![Chat](docs/images/chat.png)
+<img src="docs/images/chat.png" alt="Chat" width="800"/>
 
 1. Assistente virtual integrado
 2. Análises contextualizadas
