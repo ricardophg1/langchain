@@ -1,6 +1,6 @@
 # 🚀 Business Analytics AI
 
-![Business Analytics AI](docs/imagens/banner.png)
+![Business Analytics AI](docs/images/banner.png)
 
 [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.29.0-FF4B4B.svg)](https://streamlit.io)
@@ -14,7 +14,7 @@
 
 ---
 
-![Dashboard Preview](docs/imagens/dashboard.png)
+![Dashboard Preview](docs/images/dashboard.png)
 
 ## ✨ Destaques
 
@@ -28,7 +28,7 @@
 
 ### 🔒 Sistema de Autenticação
 
-![Auth Preview](docs/imagens/auth.png)
+![Auth Preview](docs/images/auth.png)
 
 1. Login seguro com usuário e senha
 2. Proteção de rotas e conteúdo
@@ -37,7 +37,7 @@
 
 ### 📈 Análise Comercial
 
-![Commercial Preview](docs/imagens/comercial.png)
+![Commercial Preview](docs/images/comercial.png)
 
 1. Visualização de dados comerciais detalhados
 2. Gráficos interativos com Plotly
@@ -52,7 +52,7 @@
 
 ### 💰 Análise Financeira
 
-![Financial Preview](docs/imagens/financeiro.png)
+![Financial Preview](docs/images/financeiro.png)
 
 1. Indicadores financeiros chave
 2. Análise de rentabilidade
@@ -61,7 +61,7 @@
 
 ### 📊 Dashboard
 
-![Dashboard Features](docs/imagens/dashboard.png)
+![Dashboard Features](docs/images/dashboard.png)
 
 1. Visão geral do negócio
 2. KPIs principais
@@ -69,7 +69,7 @@
 
 ### 🏭 Análise Operacional
 
-![Operational Preview](docs/imagens/operacional.png)
+![Operational Preview](docs/images/operacional.png)
 
 1. Eficiência operacional
 2. Gestão de recursos
@@ -77,7 +77,7 @@
 
 ### 💬 Chat com IA
 
-![AI Chat Preview](docs/imagens/chat.png)
+![AI Chat Preview](docs/images/chat.png)
 
 1. Assistente virtual integrado
 2. Análises contextualizadas
@@ -96,14 +96,14 @@
 
 ## 📦 Instalação
 
-1. **Clone o Repositório**
+1. Clone o Repositório
 
 ```bash
 git clone https://github.com/seu-usuario/business-analytics-ai.git
 cd business-analytics-ai
 ```
 
-2.**Configure o Ambiente Virtual**
+1. Configure o Ambiente Virtual
 
 ```bash
 python -m venv .venv
@@ -112,13 +112,13 @@ source .venv/bin/activate  # Linux/Mac
 .venv\Scripts\activate  # Windows
 ```
 
-3.**Instale as Dependências**
+1. Instale as Dependências
 
 ```bash
 pip install -r requirements/prod.txt
 ```
 
-1. **Configure as Variáveis de Ambiente**
+1. Configure as Variáveis de Ambiente
 
 ```env
 OPENAI_API_KEY=sua_chave_api
@@ -126,7 +126,7 @@ APP_USERNAME=seu_usuario
 APP_PASSWORD=sua_senha
 ```
 
-5.**Execute a Aplicação**
+1. Execute a Aplicação
 
 ```bash
 streamlit run langchain_project/main.py
