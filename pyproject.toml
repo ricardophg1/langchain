@@ -1,24 +1,32 @@
-[project]
-name = "project-langchain"
-version = "0.1.0"
-description = "Projeto de análise financeira com IA"
-dependencies = [
-    "streamlit",
-    "openai>=1.0.0",
-    "python-dotenv",
-    "python-pptx",
-    "langchain",
-    "langchain-openai",
-    "pandas",
-    "plotly",
-    "numpy",
-    "openpyxl",
-    "fastparquet",
-    "secure-smtplib",
-    "reportlab",
-    "requests",
-]
-
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[project]
+name = "langchain-project"
+version = "0.1.0"
+authors = [
+  { name="Ricardo", email="ricardo@example.com" },
+]
+description = "Projeto de análise financeira usando LangChain"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "streamlit",
+    "langchain",
+    "openai",
+    "python-dotenv",
+    "pandas",
+    "plotly",
+    "openpyxl",
+    "numpy",
+    "python-pptx",
+    "langchain-openai",
+    "secure-smtplib",
+    "reportlab",
+    "requests",
+    "statsmodels",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["langchain_project"]
