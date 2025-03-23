@@ -1,0 +1,15 @@
+2025-03-11 20:42:06,530 - main - INFO - Ambiente inicializado: development
+2025-03-11 20:42:06,530 - SecurityManager - INFO - Usando configurações padrão de segurança
+2025-03-11 20:42:06,530 - SecurityManager - INFO - Novo segredo JWT gerado e armazenado
+2025-03-11 20:42:06,531 - TenantManager - INFO - Arquivo de exemplo de tenants criado
+2025-03-11 20:42:06,531 - TenantManager - INFO - Carregados 3 tenants
+2025-03-11 20:42:06,534 - SecurityManager - INFO - Usando configurações padrão de segurança
+2025-03-11 20:42:06,535 - main - INFO - Componentes inicializados
+2025-03-11 21:07:42,495 - main - INFO - Ambiente inicializado: prod
+2025-03-11 21:08:04,668 - main - INFO - Ambiente inicializado: prod
+2025-03-11 21:08:04,672 - SecurityManager - WARNING - Tentativa de login com usuário inexistente: ricardophg1
+2025-03-11 21:12:52,958 - main - INFO - Ambiente inicializado: prod
+2025-03-11 21:12:52,958 - SecurityManager - INFO - Usando configurações padrão de segurança
+2025-03-11 21:12:52,958 - TenantManager - INFO - Carregados 3 tenants
+2025-03-11 21:12:52,959 - SecurityManager - INFO - Usando configurações padrão de segurança
+2025-03-11 21:12:52,959 - main - INFO - Componentes inicializados

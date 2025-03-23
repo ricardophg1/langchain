@@ -1,0 +1,62 @@
+{
+    "acme": {
+        "name": "ACME Corporation",
+        "domain": "acme.com",
+        "created_at": "2025-03-11T20:42:06.531132",
+        "logo_url": "/images/acme_logo.png",
+        "primary_color": "#3366FF",
+        "modules": [
+            "dashboard",
+            "financial",
+            "commercial",
+            "operational"
+        ],
+        "features": {
+            "ai_assistant": true,
+            "data_export": true,
+            "api_access": true,
+            "predictive_analysis": true
+        },
+        "storage_quota_mb": 5000,
+        "max_users": 25
+    },
+    "globex": {
+        "name": "Globex Corporation",
+        "domain": "globex.com",
+        "created_at": "2025-03-11T20:42:06.531146",
+        "logo_url": "/images/globex_logo.png",
+        "primary_color": "#22AA99",
+        "modules": [
+            "dashboard",
+            "financial",
+            "commercial"
+        ],
+        "features": {
+            "ai_assistant": true,
+            "data_export": true,
+            "api_access": false,
+            "predictive_analysis": false
+        },
+        "storage_quota_mb": 2000,
+        "max_users": 10
+    },
+    "initech": {
+        "name": "Initech",
+        "domain": "initech.com",
+        "created_at": "2025-03-11T20:42:06.531150",
+        "logo_url": "/images/initech_logo.png",
+        "primary_color": "#FF6600",
+        "modules": [
+            "dashboard",
+            "financial"
+        ],
+        "features": {
+            "ai_assistant": false,
+            "data_export": true,
+            "api_access": false,
+            "predictive_analysis": false
+        },
+        "storage_quota_mb": 1000,
+        "max_users": 5
+    }
+}
