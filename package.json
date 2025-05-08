@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "description": "Root package for Business Analytics Pro project",
   "scripts": {
-    "start": "cd business-analytics-pro && node server.js",
-    "dev": "cd business-analytics-pro && node server.js",
-    "build": "echo 'Build process completed'"
+    "start": "echo 'Serving index.html - This is a Python-based Streamlit application that requires Python environment.'",
+    "dev": "echo 'Serving index.html - This is a Python-based Streamlit application that requires Python environment.'"
   },
   "repository": {
     "type": "git",
