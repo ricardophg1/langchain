@@ -5,7 +5,7 @@
   "scripts": {
     "start": "cd business-analytics-pro && python3 -m langchain_project.main",
     "dev": "cd business-analytics-pro && python3 -m langchain_project.main --debug",
-    "install": "cd business-analytics-pro && pip3 install -r ../requirements/prod.txt",
+    "install": "cd business-analytics-pro && python3 -m pip install -r ../requirements/prod.txt",
     "build": "cd business-analytics-pro && echo 'Build process completed'",
     "test": "cd business-analytics-pro && python3 -m pytest ../tests/"
   },
