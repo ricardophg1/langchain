@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "Root package for Business Analytics Pro project",
   "scripts": {
-    "start": "cd business-analytics-pro && npm start",
-    "dev": "cd business-analytics-pro && npm run dev",
-    "install": "cd business-analytics-pro && npm install",
-    "build": "cd business-analytics-pro && npm run build",
-    "test": "cd business-analytics-pro && npm test"
+    "start": "cd business-analytics-pro && python -m langchain_project.main",
+    "dev": "cd business-analytics-pro && python -m langchain_project.main --debug",
+    "install": "cd business-analytics-pro && pip install -r ../requirements/prod.txt",
+    "build": "cd business-analytics-pro && echo 'Build process completed'",
+    "test": "cd business-analytics-pro && python -m pytest ../tests/"
   },
   "repository": {
     "type": "git",

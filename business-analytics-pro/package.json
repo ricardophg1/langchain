@@ -5,7 +5,7 @@
     "start": "python -m langchain_project.main",
     "dev": "python -m langchain_project.main --debug",
     "build": "echo 'Build process completed'",
-    "test": "python -m pytest tests/"
+    "test": "python -m pytest ../tests/"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
