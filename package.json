@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "Root package for Business Analytics Pro project",
   "scripts": {
-    "start": "cd business-analytics-pro && npx streamlit run langchain_project/main.py",
-    "dev": "cd business-analytics-pro && npx streamlit run langchain_project/main.py --debug",
-    "build": "cd business-analytics-pro && echo 'Build process completed'",
-    "test": "echo 'Python environment not available for testing'"
+    "start": "cd business-analytics-pro && node server.js",
+    "dev": "cd business-analytics-pro && node server.js",
+    "build": "echo 'Build process completed'"
   },
   "repository": {
     "type": "git",
@@ -22,8 +21,5 @@
   "private": true,
   "workspaces": [
     "business-analytics-pro"
-  ],
-  "dependencies": {
-    "streamlit-browser": "^1.29.0"
-  }
+  ]
 }

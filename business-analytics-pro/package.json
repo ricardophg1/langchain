@@ -2,17 +2,15 @@
   "name": "business-analytics-pro",
   "version": "1.0.0",
   "scripts": {
-    "start": "npx streamlit run langchain_project/main.py",
-    "dev": "npx streamlit run langchain_project/main.py --debug",
-    "build": "echo 'Build process completed'",
-    "test": "echo 'Python environment not available for testing'"
+    "start": "node server.js",
+    "dev": "node server.js",
+    "build": "echo 'Build process completed'"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@mui/material": "^6.4.7",
     "axios": "^1.8.2",
-    "react-router-dom": "^7.3.0",
-    "streamlit-browser": "^1.29.0"
+    "react-router-dom": "^7.3.0"
   }
 }

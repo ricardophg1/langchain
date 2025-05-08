@@ -1,0 +1,99 @@
+const http = require("http");
+const fs = require("fs");
+const path = require("path");
+
+const PORT = process.env.PORT || 8080;
+
+// Create a simple HTML page explaining the situation
+const html = `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Analytics Pro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .container {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .code {
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-radius: 4px;
+            font-family: monospace;
+            overflow-x: auto;
+        }
+        .note {
+            background-color: #fffde7;
+            padding: 15px;
+            border-left: 4px solid #ffd600;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Business Analytics Pro</h1>
+        <p>This is a Python-based Streamlit application that requires a Python environment with the following dependencies:</p>
+        
+        <div class="code">
+            streamlit==1.29.0<br>
+            openai>=1.10.0<br>
+            python-dotenv==1.0.0<br>
+            plotly==5.18.0<br>
+            pandas==2.1.4<br>
+            statsmodels==0.14.1
+        </div>
+        
+        <div class="note">
+            <strong>Note:</strong> The current environment doesn't have Python with these dependencies installed.
+            To run this application, you'll need to set up a Python environment with the required packages.
+        </div>
+        
+        <h2>How to Run This Application</h2>
+        <ol>
+            <li>Ensure Python 3.8+ is installed</li>
+            <li>Install the required packages:
+                <div class="code">pip install -r requirements/prod.txt</div>
+            </li>
+            <li>Run the Streamlit application:
+                <div class="code">cd business-analytics-pro<br>streamlit run langchain_project/main.py</div>
+            </li>
+        </ol>
+        
+        <h2>Project Structure</h2>
+        <p>This is a multi-tenant business analytics platform with the following features:</p>
+        <ul>
+            <li>Financial analysis dashboard</li>
+            <li>Operational metrics</li>
+            <li>Commercial insights</li>
+            <li>AI-powered predictions and recommendations</li>
+            <li>ERP/CRM integrations</li>
+        </ul>
+    </div>
+</body>
+</html>
+`;
+
+// Create a simple HTTP server
+const server = http.createServer((req, res) => {
+  res.writeHead(200, { "Content-Type": "text/html" });
+  res.end(html);
+});
+
+server.listen(PORT, () => {
+  console.log(`Server running at http://localhost:${PORT}/`);
+});
