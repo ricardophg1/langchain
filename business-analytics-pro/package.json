@@ -2,10 +2,10 @@
   "name": "business-analytics-pro",
   "version": "1.0.0",
   "scripts": {
-    "start": "python -m langchain_project.main",
-    "dev": "python -m langchain_project.main --debug",
+    "start": "python3 -m langchain_project.main",
+    "dev": "python3 -m langchain_project.main --debug",
     "build": "echo 'Build process completed'",
-    "test": "python -m pytest ../tests/"
+    "test": "python3 -m pytest ../tests/"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
