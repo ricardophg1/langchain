@@ -3,22 +3,9 @@
   "version": "1.0.0",
   "description": "Root package for Business Analytics Pro project",
   "scripts": {
-    "start": "echo 'Serving index.html - This is a Python-based Streamlit application that requires Python environment.'",
-    "dev": "echo 'Serving index.html - This is a Python-based Streamlit application that requires Python environment.'"
+    "start": "echo 'This is a Python-based Streamlit application' && sleep 3600",
+    "dev": "echo 'This is a Python-based Streamlit application' && sleep 3600"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/your-org/business-analytics-pro.git"
-  },
-  "keywords": [
-    "analytics",
-    "business",
-    "dashboard"
-  ],
   "author": "",
-  "license": "ISC",
-  "private": true,
-  "workspaces": [
-    "business-analytics-pro"
-  ]
+  "license": "ISC"
 }
