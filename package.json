@@ -1,0 +1,27 @@
+{
+  "name": "business-analytics-pro-root",
+  "version": "1.0.0",
+  "description": "Root package for Business Analytics Pro project",
+  "scripts": {
+    "start": "cd business-analytics-pro && npm start",
+    "dev": "cd business-analytics-pro && npm run dev",
+    "install": "cd business-analytics-pro && npm install",
+    "build": "cd business-analytics-pro && npm run build",
+    "test": "cd business-analytics-pro && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-org/business-analytics-pro.git"
+  },
+  "keywords": [
+    "analytics",
+    "business",
+    "dashboard"
+  ],
+  "author": "",
+  "license": "ISC",
+  "private": true,
+  "workspaces": [
+    "business-analytics-pro"
+  ]
+}
