@@ -1,10 +1,4 @@
-import streamlit as st
 import pandas as pd
-
-def check_alerts():
-    """Verifica e exibe alertas"""
-    # Exemplo de alerta
-    st.warning("⚠️ Alguns indicadores estão abaixo da meta!")
 
 def check_alerts(data):
     """Verifica alertas nos dados financeiros
