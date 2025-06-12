@@ -12,3 +12,6 @@ wheels/
 .venv
 
 .env
+# Secrets
+business-analytics-pro/secrets/
+
