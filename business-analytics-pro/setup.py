@@ -16,3 +16,4 @@ setup(
         "scikit-learn==1.4.0"  # Adicionando scikit-learn para análise preditiva
     ],
 )
+
