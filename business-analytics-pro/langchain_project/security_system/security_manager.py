@@ -90,26 +90,31 @@ class SecurityManager:
     
     def _init_jwt_secret(self):
         """Inicializa o segredo para assinatura de tokens JWT"""
-        # Verificar se já existe um segredo no ambiente
+        # Tenta carregar o segredo a partir de uma variável de ambiente
         jwt_secret = os.environ.get("JWT_SECRET")
-        
-        if not jwt_secret:
-            # Criar novo segredo e armazená-lo em um arquivo
-            jwt_secret = secrets.token_hex(32)
-            try:
-                secret_dir = os.path.join(os.getcwd(), 'secrets')
-                os.makedirs(secret_dir, exist_ok=True)
-                
-                with open(os.path.join(secret_dir, 'jwt_secret.key'), 'w') as f:
-                    f.write(jwt_secret)
-                
-                # Definir no ambiente
-                os.environ["JWT_SECRET"] = jwt_secret
-                self.logger.info("Novo segredo JWT gerado e armazenado")
-            except Exception as e:
-                self.logger.error(f"Erro ao salvar segredo JWT: {str(e)}")
-                # Ainda usar o segredo gerado, mesmo sem salvar
-                os.environ["JWT_SECRET"] = jwt_secret
+
+        if jwt_secret:
+            self.logger.info("Segredo JWT carregado do ambiente")
+            return
+
+        # Caso não exista, procurar em um arquivo externo (ignorado pelo Git)
+        secret_file = os.environ.get(
+            "JWT_SECRET_FILE",
+        ) or os.path.join(os.getcwd(), "secrets", "jwt_secret.key")
+
+        try:
+            with open(secret_file, "r") as f:
+                jwt_secret = f.read().strip()
+            os.environ["JWT_SECRET"] = jwt_secret
+            self.logger.info("Segredo JWT carregado do arquivo")
+        except FileNotFoundError:
+            self.logger.error(
+                "Segredo JWT nao encontrado. Defina a variavel JWT_SECRET ou forneca um arquivo."
+            )
+            raise
+        except Exception as e:
+            self.logger.error(f"Erro ao carregar segredo JWT: {str(e)}")
+            raise
     
     def _hash_password(self, password: str, salt: Optional[str] = None) -> Tuple[str, str]:
         """

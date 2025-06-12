@@ -126,7 +126,10 @@ pip install -r requirements/prod.txt
 OPENAI_API_KEY=sua_chave_api
 APP_USERNAME=seu_usuario
 APP_PASSWORD=sua_senha
+JWT_SECRET=sua_chave_jwt
 ```
+
+Opcionalmente, é possível armazenar o segredo em um arquivo externo (fora do controle do Git) e definir a variável `JWT_SECRET_FILE` com o caminho para esse arquivo. O caminho padrão utilizado é `business-analytics-pro/secrets/jwt_secret.key`.
 
 1. Execute a Aplicação
 
