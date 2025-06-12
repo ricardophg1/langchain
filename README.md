@@ -2,7 +2,7 @@
 
 ![Business Analytics AI](docs/images/banner.png)
 
-[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/downloads/)
+[![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.29.0-FF4B4B.svg)](https://streamlit.io)
 [![OpenAI](https://img.shields.io/badge/OpenAI-API-00A36C.svg)](https://openai.com/blog/openai-api)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)

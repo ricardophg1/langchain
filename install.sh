@@ -83,7 +83,7 @@ check_requirements() {
     
     # Verificar Python
     if ! command -v python3 &> /dev/null; then
-        log_error "Python 3 não encontrado. Por favor, instale o Python 3.9+ e tente novamente."
+        log_error "Python 3 não encontrado. Por favor, instale o Python 3.11+ e tente novamente."
         exit 1
     fi
     
@@ -91,8 +91,8 @@ check_requirements() {
     PYTHON_MAJOR=$(echo $PYTHON_VERSION | cut -d '.' -f 1)
     PYTHON_MINOR=$(echo $PYTHON_VERSION | cut -d '.' -f 2)
     
-    if [ "$PYTHON_MAJOR" -lt 3 ] || ([ "$PYTHON_MAJOR" -eq 3 ] && [ "$PYTHON_MINOR" -lt 9 ]); then
-        log_error "Python 3.9+ é requerido. Versão encontrada: $PYTHON_VERSION"
+    if [ "$PYTHON_MAJOR" -lt 3 ] || ([ "$PYTHON_MAJOR" -eq 3 ] && [ "$PYTHON_MINOR" -lt 11 ]); then
+        log_error "Python 3.11+ é requerido. Versão encontrada: $PYTHON_VERSION"
         exit 1
     fi
     
