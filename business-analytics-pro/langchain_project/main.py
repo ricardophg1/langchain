@@ -19,7 +19,6 @@ from langchain_project.components.email_button import create_email_button
 from langchain_project.components.file_importer import file_importer
 from langchain_project.components.sidebar import create_report_history
 from langchain_project.utils.financial_data import calcular_metricas
-from langchain_project.utils.alerts import check_alerts
 from langchain_project.models.openai_model import get_response
 
 # Carregar páginas
